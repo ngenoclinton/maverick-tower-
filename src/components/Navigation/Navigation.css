@@ -49,7 +49,7 @@
     font-size: 15px;
     line-height: 27px;
     text-align: center;
-    color: #FFFFFF;
+    cursor:pointer;
 }
 .nav-item:hover{
     color: #1d2859;
@@ -96,8 +96,9 @@
     width: 200px;
     background-color: #fff;
     z-index: 110;
-    transform: translateX(-550px);
+    transform: translateX(-1050px);
     transition: transform 0.6s ease-in-out;
+    display:none
   }
  .open{
     display: none; 
@@ -229,6 +230,7 @@
             top: 0;
             left: 0;
             transition: transform 0.6s ease-in-out;
+            display:unset;
           }
           .sidenav .flex li{
             list-style-type:none;
@@ -237,8 +239,7 @@
             text-decoration: none;
             display: flex;
             justify-content: center;
-            margin:0 auto;
-    
+            margin:0 auto;    
           }
           .sidenav .nav-item {
             /* width: 100%; */
@@ -292,7 +293,6 @@
             font-size: 30px; 
             color: rgb(35, 45, 90, .9); 
          }   
-     
 }
 
 @media screen and (max-width:732px) {    
@@ -334,92 +334,7 @@
     .nav-menu ul{
         display: none;       
     }     
-    .flex{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        gap: 50px;
-    }
-    .nav-menu li:not(:last-child){
-        margin: 0;
-    }
-    .nav-menu div:last-child{
-        border-left:none;
-    }
-    /* side nav */
-    .sidenav.show{
-        background: rgba(54, 52, 52, 0.9);
-        transform: translateX(0);
-        color: #fff;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        transition: transform 0.6s ease-in-out;
-      }
-      .sidenav .flex li{
-        list-style-type:none;
-        font-size: 15px;
-        cursor: pointer;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        margin:0 auto;
-
-      }
-      .sidenav .nav-item {
-        /* width: 100%; */
-        color: #fff;
-        padding: 5px;
-        text-align: center;
-        margin:0 auto;
-
-      }
-      .sidenav .resume-btn {
-        color: #fff;
-        padding: 3px 25px;
-        text-align: center;
-        font-size: 15px;
-        border: 1px solid ;
-      }
-      .sidenav .resume-btn:hover{
-        background-color: #fff;
-        color: #1d2859;
-        border-bottom: 1px solid #1d2859;
-    }
-    .sidenav div {
-        display: flex;
-        justify-content: center;
-        margin-top: 60px;
-      }
-    .sidenav div *{
-        /* margin-left: 15px; */
-        cursor: pointer;
-        color: #fff;
-    }
-    .sidenav div svg {
-        margin: 0 18px;
-        transform: scale(1.4);
-        cursor: pointer;
-      }
-     .sidenav .close{
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        color: #fff;
-        transform: scale(1.6);
-        font-weight: 300;
-     } 
-    /*  */    
-     .nav-menu .open{
-        display: unset;
-        position: absolute;
-        z-index: 10;
-        right: 30px;
-        top: 18px;  
-        font-size: 30px; 
-        color: rgb(35, 45, 90, .9); 
-     }   
+      
  }
 
 @media screen and (max-width: 625px){ 

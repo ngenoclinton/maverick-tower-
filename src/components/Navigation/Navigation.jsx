@@ -47,8 +47,9 @@ function Navigation() {
                         <span className='nav-item'>Blog</span> 
                     </li>  
                     <li onClick={()=>setIsHidden(!isHidden)}>
-                        <span className='nav-item'>Blog</span> 
-                    </li>                  
+                        <span className='nav-item'>Contact</span> 
+                    </li> 
+                    <button className='call-btn'>Schedule a call</button>                 
             </div>
             <FaTimes className='close' onClick={()=>setIsHidden(!isHidden)}/>
             </div>
