@@ -1,0 +1,303 @@
+.container-section {
+    position: relative;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container p{
+    position: absolute;
+    width: 800px;
+    left: 285px;
+    top: 27px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+.banner-btn{    
+position: absolute;
+width: 300px;
+height: 50px;
+left: 530px;
+top: 300px;
+background: #00308F;
+border-radius: 10px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+color: #FFFFFF;
+}
+.container span{
+position: absolute;
+width: 1150px;
+height: 470px;
+left: 105px;
+top: 410px;
+background: url('./Image/Rectangle 1.png');
+border-radius: 10px;
+z-index: 100;
+}
+.rectangle-after{
+    position: absolute;
+    width: 1440px;
+    height: 264px;
+    left: 0px;
+    top: 816px;    
+    /* background: #00308F; */
+}
+.container::after {
+    content: "";
+    display: block;
+    position: absolute;
+    position: absolute;
+    width: 1440px;
+    height: 264px;
+    left: 0px;
+    top: 750px;    
+    background: #00308F;
+  }
+/* media queries */
+@media (min-width: 1400px){
+    .about .container {
+        max-width: 1320px;
+    }
+}
+@media (max-width: 1200px){
+    .about {
+        height: 100%;
+        clip-path: none;
+    }
+    .about .container {
+        max-width: 1140px;
+    }
+}
+@media screen and (max-width: 1024px)  {
+    .container {
+        width: 100vw;
+        overflow: hidden;
+    }
+    .container p{
+        position: none;
+        width: 650px;
+        left: 225px;
+        top: 20px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .banner-btn{    
+        position: absolute;
+        width: 300px;
+        left: 375px;
+        top: 160px;
+        }
+   .container span{
+        width: 950px;
+        height: 405px;
+        left: 35px;
+        top: 270px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        }
+    .container::after {
+        content: "";
+        display: block;
+        position: absolute;
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        top: 530px;    
+    }    
+}
+@media screen and (max-width: 768px)  {
+    .container {
+        width: 100vw;
+        overflow: hidden;
+    }
+    .container p{
+        position: none;
+        width: 90%;
+        left: 30px;
+        top: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 45px;
+    }
+    .banner-btn{    
+        position: absolute;
+        width: 270px;
+        height: 50px;
+        left: 215px;
+        top: 140px;
+        font-size: 15px;
+        }
+   .container span{
+        width: 650px;
+        height: 400px;
+        left: 20px;
+        top: 240px;
+        object-fit: contain;
+        background-position: center;
+        background-size: cover;
+        }
+    .container::after {
+        content: "";
+        display: block;
+        position: absolute;
+        position: absolute;
+        width: 100%;
+        height: 220px;
+        top: 520px;    
+    }    
+}
+@media  screen and (max-width: 586px){   
+    .container-section{
+        padding: 0;
+        width: 100%;
+    }
+    .container p{
+        padding: 0;
+        width: 100%;
+        top: 30px;
+        font-weight: 670;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    .banner-btn{    
+        width: 280px;
+        height: 60px;
+        left: 150px;
+        top: 150px;
+        font-size: 17px;
+        }
+   .container span{
+        width: 505px;
+        height: 350px;
+        left: 10px;
+        top: 260px;
+        object-fit: contain;
+        background-position: center;
+        background-size: cover;
+        }
+    .container::after {
+        height: 200px;
+        top: 500px;    
+    } 
+}
+
+
+@media  screen and (max-width: 425px){   
+    .container p{
+        left: 5px;
+        top: 30px;
+        font-weight: 670;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .banner-btn{    
+        width: 250px;
+        height: 50px;
+        left: 60px;
+        top: 140px;
+        font-size: 14px;
+        }
+   .container span{
+        width: 365px;
+        height: 200px;
+        left: 10px;
+        top: 240px;
+        background-position: center;
+        background-size: cover;
+        }
+    .container::after {
+        height: 170px;
+        top: 350px;    
+    } 
+}
+@media  screen and (max-width: 405px){   
+    
+   .container span{
+        width: 335px;
+        height: 150px;
+        left: 10px;
+        top: 210px;
+        background-repeat: no-repeat;
+        }
+    .container::after {
+        height: 100px;
+        top: 300px;    
+    } 
+}
+@media  screen and (max-width: 390px){   
+   .container span{
+        width: 330px;
+        height: 150px;
+        left: 5px;
+        top: 210px;
+        background-repeat: no-repeat;
+        }
+    .container::after {
+        height: 120px;
+        top: 300px;    
+    } 
+}
+@media  screen and (max-width: 375px){   
+    .container p{
+        top: 30px;
+        font-weight: 670;
+        font-size: 14px;
+        line-height: 27px;
+    }
+    .banner-btn{    
+        width: 250px;
+        height: 50px;
+        left: 50px;
+        top: 130px;
+        font-size: 14px;
+        }
+   .container span{
+        width: 315px;
+        height: 150px;
+        left: 10px;
+        top: 210px;
+        background-repeat: no-repeat;
+        }
+    .container::after {
+        top: 300px;    
+    } 
+}
+@media  screen and (max-width: 320px){   
+    .container p{
+        top: 30px;
+        font-weight: 650;
+        font-size: 13px;
+        line-height: 25px;
+    }
+    .banner-btn{    
+        width: 230px;
+        height: 50px;
+        left: 30px;
+        font-size: 12px;
+        }
+   .container span{
+        width: 270px;
+        height: 150px;
+        left: 10px;
+        top: 210px;
+        background-repeat: no-repeat;
+        }
+    .container::after {
+        top: 300px;    
+    } 
+}
